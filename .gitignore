@@ -5,7 +5,11 @@
 .env.production
 .phpactor.json
 .phpunit.result.cache
+<<<<<<< HEAD
 /.cursor/
+=======
+/.fleet
+>>>>>>> bb1d15a8ad6975885f7f5cfb4e5f7b5c0fae9f1f
 /.idea
 /.nova
 /.phpunit.cache

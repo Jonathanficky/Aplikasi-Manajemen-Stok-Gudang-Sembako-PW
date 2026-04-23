@@ -9,11 +9,19 @@
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
         "autoprefixer": "^10.5.0",
+<<<<<<< HEAD
         "concurrently": "^9.0.1",
         "flowbite": "^4.0.1",
         "laravel-vite-plugin": "^3.0.0",
         "postcss": "^8.5.10",
         "tailwindcss": "^3.4.19",
+=======
+        "axios": ">=1.11.0 <=1.14.0",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^3.0.0",
+        "postcss": "^8.5.9",
+        "tailwindcss": "^4.2.2",
+>>>>>>> bb1d15a8ad6975885f7f5cfb4e5f7b5c0fae9f1f
         "vite": "^8.0.0"
     }
 }
