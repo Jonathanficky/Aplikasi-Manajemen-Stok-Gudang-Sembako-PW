@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -224,22 +223,3 @@
         @endif
     </body>
 </html>
-=======
-<html>
-<head>
-    <title>Praktikum 5</title>
-
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="{{ asset('styles/style_arian.css') }}">
-</head>
-<body>
-
-    <h1>Ini Gambar Produk</h1>
-
-    <!-- Gambar -->
-    <img src="{{ asset('images/enak.jpg') }}" alt="produk1">
-    <img src="{{ asset('images/images.png') }}" alt="produk2">
-
-</body>
-</html>
->>>>>>> bb1d15a8ad6975885f7f5cfb4e5f7b5c0fae9f1f

@@ -1,17 +1,24 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
+use App\Http\Controllers\ProdukController;
 
+// 1. Kalau buka localhost:8000 langsung lempar ke dashboard yang benar
 Route::get('/', function () {
-    return view('app');
-});
-=======
-use App\Http\Controllers\BarangController;
-
-Route::get('/', function () {
-    return view('welcome');
+    return redirect('/pages/dashboard');
 });
 
-Route::get('/barang', [BarangController::class, 'tampilkan']);
->>>>>>> bb1d15a8ad6975885f7f5cfb4e5f7b5c0fae9f1f
+// 2. Semua halaman PBL kamu dikumpulin di sini
+Route::prefix('pages')->group(function () {
+
+    // Halaman Dashboard
+    Route::get('/dashboard', function () {
+        return view('pages.dashboard');
+    })->name('dashboard');
+
+    // Halaman Produk (Tabel yang tadi sudah berhasil)
+    Route::get('/product', [ProdukController::class, 'index'])->name('product.index');
+
+    // Halaman lainnya (buat dummy aja biar gak 404)
+    Route::view('/masuk', 'pages.dashboard')->name('masuk');
+});
